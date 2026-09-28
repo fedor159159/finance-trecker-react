@@ -1,0 +1,33 @@
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+.app__title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.app__theme-toggle {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.15s;
+}
+
+.app__theme-toggle:hover {
+  border-color: var(--accent);
+}

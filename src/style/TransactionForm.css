@@ -1,0 +1,94 @@
+.transaction-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-bottom: 24px;
+}
+
+.transaction-form__input,
+.transaction-form__select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  background: var(--card-bg);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.transaction-form__input:focus,
+.transaction-form__select:focus {
+  border-color: var(--accent);
+}
+
+.transaction-form__input--wide {
+  grid-column: 1 / -1;
+}
+
+.transaction-form__button {
+  grid-column: 1 / -1;
+  padding: 12px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.transaction-form__button:hover {
+  background: var(--accent-hover);
+}
+
+@media (max-width: 600px) {
+  .transaction-form {
+    grid-template-columns: 1fr;
+  }
+}
+.transaction-form__chips {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.transaction-form__chips-label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.transaction-form__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: var(--chip-bg);
+  border-radius: 14px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.transaction-form__chip-delete {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0 2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.15s;
+}
+
+.transaction-form__chip-delete:hover {
+  background: var(--hover-danger);
+  color: var(--expense);
+}

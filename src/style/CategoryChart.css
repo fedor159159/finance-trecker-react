@@ -1,0 +1,51 @@
+.chart {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  margin-bottom: 24px;
+}
+
+.chart__title {
+  margin: 0 0 16px;
+  font-size: 18px;
+  color: var(--text);
+}
+
+.chart__empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 24px;
+}
+
+.chart__wrapper {
+  width: 100%;
+  height: 320px;
+}
+
+.chart__tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.chart__tab {
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-radius: 8px;
+  font-size: 13px;
+  transition: all 0.15s;
+  color: var(--text);
+}
+
+.chart__tab:hover {
+  border-color: var(--accent);
+}
+
+.chart__tab--active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
